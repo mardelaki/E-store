@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>eStore</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<context-param>
+		<param-name>Cafe</param-name>
+		<param-value>18.50</param-value>
+	</context-param>
+		<context-param>
+		<param-name>Sugar</param-name>
+		<param-value>6.95</param-value>
+	</context-param>
+		<context-param>
+		<param-name>Water</param-name>
+		<param-value>1.29</param-value>
+	</context-param>
+	<session-config>
+	<session-timeout>4200</session-timeout>
+	</session-config>
+	
+<servlet>
+    <servlet-name>Redirector</servlet-name>
+    <servlet-class>mypack.Redirector</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Redirector</servlet-name>
+    <url-pattern>/Redirector.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>GetCode</servlet-name>
+    <servlet-class>mypack.GetCode</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetCode</servlet-name>
+    <url-pattern>/GetCode.do</url-pattern>
+  </servlet-mapping>
+  <context-param>
+  <param-name>infoUrl</param-name>
+  <param-value>http://mardelaki.wordpress.com/</param-value>
+  </context-param>
+    <listener>
+  <listener-class>mypack.MyListener</listener-class>
+  </listener>
+<jsp-config> 
+<taglib>
+  <taglib-uri>http://jakarta.apache.org/taglibs/response-1.0</taglib-uri>
+  <taglib-location>/WEB-INF/taglibs-response.tld</taglib-location>
+</taglib>
+<taglib>
+  <taglib-uri>http://jakarta.apache.org/taglibs/session-1.0</taglib-uri>
+  <taglib-location>/WEB-INF/taglibs-session.tld</taglib-location>
+</taglib>
+</jsp-config> 
+</web-app>
