@@ -56,5 +56,9 @@
   <taglib-uri>http://jakarta.apache.org/taglibs/session-1.0</taglib-uri>
   <taglib-location>/WEB-INF/taglibs-session.tld</taglib-location>
 </taglib>
+ <taglib>
+    <taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+    <taglib-location>/WEB-INF/c.tld</taglib-location>
+  </taglib>
 </jsp-config> 
 </web-app>

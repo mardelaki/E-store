@@ -11,4 +11,4 @@ Report of Project 3
 
 URL(για τη πρώτη περίπτωση):http://texwww.inf.uth.gr:8080/~delimpal/ScripletStore.jsp
 
-URL(για τη δεύτερη περίπτωση):http://texwww.inf.uth.gr:8080/~delimpal/
+URL(για τη δεύτερη περίπτωση):http://texwww.inf.uth.gr:8080/~delimpal/ScriptFree.jsp

@@ -9,6 +9,9 @@ public class cart implements java.io.Serializable
 	public double waterquantity;
 
 	public cart() {
+		coffeequantity=-1;
+		sugarquantity=-1;
+		waterquantity=-1;
 	}
 
 	public double getItemPrice() {
